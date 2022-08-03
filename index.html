@@ -10,5 +10,60 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Personal Portfolio</title>
   </head>
-  <body></body>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <div class="container mx-auto p-6 max-w-[1110px]">
+        <!-- Flex Container -->
+        <div class="flex items-center justify-between">
+          <!-- Logo -->
+          <div class="w-12">
+            <img src="assets/logo.svg" alt="Logo" class="" />
+          </div>
+          <!-- CTA BTN -->
+          <button type="submit" class="bg-dark text-light py-3 px-7 rounded-full font-bold font-sans hover:bg-purple">Free Consultation</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header id="header">
+      <!-- Container -->
+      <div class="container mx-auto p-6 max-w-[1110px]">
+        <!-- Flex Container -->
+        <div class="flex flex-col items-center justify-center space-y-5 mb-10">
+          <h1 class="text-5xl font-bold text-dark text-center leading-[3.5rem]">Design solutions made easy</h1>
+          <p class="text-center text-grey text-2xl leading-8 max-w-sm md:max-w-xl lg:max-w-5xl">With over ten years of experience in various deisgn disciplines, I'm your one-stop shop for your design needs.</p>
+        </div>
+        <!-- Grid Container -->
+        <ul class="grid grid-cols-2 md:grid-cols-4 md:auto-rows-[182px] gap-4 lg:grid-cols-6">
+          <!-- Grid Items -->
+          <li class="col-span-2 bg-purple text-white h-[364px] rounded-lg p-4 relative">
+            <img src="assets/pattern-graphic-design.svg" alt="" class="absolute right-5" />
+            <p class="text-2xl font-sans absolute bottom-5">Graphic Design</p>
+          </li>
+          <li class="bg-orange h-[182px] rounded-lg p-4 relative text-white">
+            <img src="assets/pattern-ui-ux.svg" alt="" class="absolute right-5" />
+            <p class="text-2xl font-sans absolute bottom-5">UI/UX</p>
+          </li>
+          <li class="bg-pink h-[182px] rounded-lg p-4 relative text-white">
+            <img src="assets/pattern-apps.svg" alt="" class="absolute right-5" />
+            <p class="text-2xl font-sans absolute bottom-5">Apps</p>
+          </li>
+          <li class="col-span-2 md:col-start-3 md:col-end-5 bg-salmon h-[165px] rounded-lg p-4 relative text-white">
+            <img src="assets/pattern-illustrations.svg" alt="" class="absolute right-5" />
+            <p class="text-2xl font-sans absolute bottom-5">Illustrations</p>
+          </li>
+          <li class="col-span-2 bg-teal h-[182px] rounded-lg lg:col-start-5 lg:row-start-1 p-4 relative text-white">
+            <img src="assets/pattern-photography.svg" alt="" class="absolute right-5" />
+            <p class="text-2xl font-sans absolute bottom-5">Photography</p>
+          </li>
+          <li class="col-span-2 bg-plum h-[182px] rounded-lg lg:h-[165px] p-4 relative text-white">
+            <img src="assets/pattern-motion-graphics.svg" alt="" class="absolute right-5" />
+            <p class="text-2xl font-sans absolute bottom-5">Motion Graphics</p>
+          </li>
+        </ul>
+      </div>
+    </header>
+  </body>
 </html>
