@@ -67,7 +67,7 @@
     </header>
 
     <!-- Section: About -->
-    <section id="about">
+    <section id="about" class="mb-10">
       <!-- Flex Container -->
       <div class="flex max-w-[1110px] mx-auto md:hidden lg:flex flex-col items-center justify-center p-8 space-y-10 md:flex-row md:space-y-0 md:space-x-5">
         <!-- Image -->
@@ -95,5 +95,62 @@
         </div>
       </div>
     </section>
+
+    <!-- Section: Work -->
+    <section id="work" class="mb-10 overflow-x-hidden">
+      <div class="h2 text-dark text-3xl text-center font-bold mb-5">My Work</div>
+      <div class="wrapper w-full mb-5">
+        <div class="slider flex w-full space-x-5 pl-5">
+          <img src="assets/image-slide-1.jpg" alt="" class="slider-img rounded-lg max-w-md" />
+          <img src="assets/image-slide-2.jpg" alt="" class="slider-img rounded-lg max-w-md" />
+          <img src="assets/image-slide-3.jpg" alt="" class="slider-img rounded-lg max-w-md" />
+          <img src="assets/image-slide-4.jpg" alt="" class="slider-img rounded-lg max-w-md" />
+          <img src="assets/image-slide-5.jpg" alt="" class="slider-img rounded-lg max-w-md" />
+        </div>
+      </div>
+      <!-- Buttons -->
+      <div class="flex items-center justify-center space-x-5 mx-auto w-full">
+        <button id="left-btn" class="flex items-center justify-center bg-dark h-[60px] w-[60px] rounded-full">
+          <img src="assets/icon-arrow-left.svg" alt="" />
+        </button>
+        <button id="right-btn" class="flex items-center justify-center bg-dark h-[60px] w-[60px] rounded-full">
+          <img src="assets/icon-arrow-right.svg" alt="" />
+        </button>
+      </div>
+    </section>
+
+    <!-- Section: CTA -->
+    <section id="cta" class="py-8 px-4">
+      <div class="container mx-auto bg-dark text-white max-w-[1110px] rounded-lg p-8 h-[375px] flex items-center justify-center lg:p-10 lg:h-[360px]">
+        <div class="flex flex-col w-full items-center justify-center space-y-5 lg:flex-row lg:space-y-0 lg:space-x-10 lg:justify-around">
+          <!-- Content -->
+          <div class="flex flex-col items-center justify-center space-y-5 lg:items-start lg:justify-start">
+            <h2 class="text-center text-3xl font-bold lg:text-left">Book a call with me</h2>
+            <p class="text-lg text-center leading-8 md:max-w-lg lg:text-left lg:max-w-lg">I'd love to have a chat to see how I can help you. The best first step is for us to discuss your project during a free consultation. Then we can move forward from there.</p>
+          </div>
+          <!-- CTA Button -->
+          <div class="lg:flex lg:items-start lg:justify-start">
+            <button type="submit" class="bg-salmon text-light py-3 px-7 rounded-full font-bold font-sans hover:bg-orange">Free Consultation</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container mx-auto p-6 max-w-[1110px]">
+        <!-- Flex Container -->
+        <div class="flex items-center justify-between">
+          <!-- Logo -->
+          <div class="w-12">
+            <img src="assets/logo.svg" alt="Logo" class="" />
+          </div>
+          <!-- CTA BTN -->
+          <button type="submit" class="bg-dark text-light py-3 px-7 rounded-full font-bold font-sans hover:bg-purple">Free Consultation</button>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/app.js"></script>
   </body>
 </html>
