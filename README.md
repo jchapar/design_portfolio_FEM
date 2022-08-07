@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [View Github Code](https://github.com/jchapar/design_portfolio_FEM)
-- Live Site URL: [Visit Site](https://jchapar.github.io/github_FEM/)
+- Live Site URL: [Visit Site](https://jchapar.github.io/design_portfolio_FEM/)
 
 ## My process
 
