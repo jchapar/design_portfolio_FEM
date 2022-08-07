@@ -18,7 +18,7 @@
         <div class="flex items-center justify-between">
           <!-- Logo -->
           <div class="w-12">
-            <img src="assets/logo.svg" alt="Logo" class="" />
+            <img src="assets/logo.svg" alt="Logo" />
           </div>
           <!-- CTA BTN -->
           <button type="submit" class="bg-dark text-light py-3 px-7 rounded-full font-bold font-sans hover:bg-purple">Free Consultation</button>
@@ -39,27 +39,27 @@
         <ul class="grid grid-cols-2 md:grid-cols-4 md:auto-rows-[182px] gap-4 lg:grid-cols-6">
           <!-- Grid Items -->
           <li class="col-span-2 bg-purple text-white h-[364px] rounded-lg p-4 relative">
-            <img src="assets/pattern-graphic-design.svg" alt="" class="absolute right-5" />
+            <img src="assets/pattern-graphic-design.svg" alt="Graphic Design Image" class="absolute right-5" />
             <p class="text-2xl font-sans absolute bottom-5">Graphic Design</p>
           </li>
           <li class="bg-orange h-[182px] rounded-lg p-4 relative text-white">
-            <img src="assets/pattern-ui-ux.svg" alt="" class="absolute right-5" />
+            <img src="assets/pattern-ui-ux.svg" alt="UI/UX Images" class="absolute right-5" />
             <p class="text-2xl font-sans absolute bottom-5">UI/UX</p>
           </li>
           <li class="bg-pink h-[182px] rounded-lg p-4 relative text-white">
-            <img src="assets/pattern-apps.svg" alt="" class="absolute right-5" />
+            <img src="assets/pattern-apps.svg" alt="Apps Image" class="absolute right-5" />
             <p class="text-2xl font-sans absolute bottom-5">Apps</p>
           </li>
           <li class="col-span-2 md:col-start-3 md:col-end-5 bg-salmon h-[165px] rounded-lg p-4 relative text-white">
-            <img src="assets/pattern-illustrations.svg" alt="" class="absolute right-5" />
+            <img src="assets/pattern-illustrations.svg" alt="Illustrations Image" class="absolute right-5" />
             <p class="text-2xl font-sans absolute bottom-5">Illustrations</p>
           </li>
           <li class="col-span-2 bg-teal h-[182px] rounded-lg lg:col-start-5 lg:row-start-1 p-4 relative text-white">
-            <img src="assets/pattern-photography.svg" alt="" class="absolute right-5" />
+            <img src="assets/pattern-photography.svg" alt="Photography Image" class="absolute right-5" />
             <p class="text-2xl font-sans absolute bottom-5">Photography</p>
           </li>
           <li class="col-span-2 bg-plum h-[182px] rounded-lg lg:h-[165px] p-4 relative text-white">
-            <img src="assets/pattern-motion-graphics.svg" alt="" class="absolute right-5" />
+            <img src="assets/pattern-motion-graphics.svg" alt="Motion Graphics Image" class="absolute right-5" />
             <p class="text-2xl font-sans absolute bottom-5">Motion Graphics</p>
           </li>
         </ul>
@@ -72,7 +72,7 @@
       <div class="flex max-w-[1110px] mx-auto md:hidden lg:flex flex-col items-center justify-center p-8 space-y-10 md:flex-row md:space-y-0 md:space-x-5">
         <!-- Image -->
         <div class="w-[300px] md:w-1/2">
-          <img src="assets/image-amy.webp" alt="" class="lg:max-w-[445px]" />
+          <img src="assets/image-amy.webp" alt="Personal Image" class="lg:max-w-[445px]" />
         </div>
         <!-- Text -->
         <div class="text-center flex flex-col items-center space-y-8 md:w-1/2 md:items-start">
@@ -85,7 +85,7 @@
       <div class="hidden md:flex lg:hidden flex-col items-center justify-center p-8 space-y-10 md:flex-row md:space-y-0 md:space-x-5">
         <!-- Image -->
         <div class="w-[300px] md:w-1/2 md:relative lg:static">
-          <img src="assets/image-amy.webp" alt="" class="md:relative md:-left-20 lg:static lg:max-w-[445px]" />
+          <img src="assets/image-amy.webp" alt="Personal Image" class="md:relative md:-left-20 lg:static lg:max-w-[445px]" />
         </div>
         <!-- Text -->
         <div class="text-center flex flex-col items-center space-y-8 md:w-1/2 md:items-start">
@@ -99,21 +99,31 @@
     <!-- Section: Work -->
     <section id="work" class="mb-10 overflow-x-hidden">
       <div class="h2 text-dark text-3xl text-center font-bold mb-5">My Work</div>
-      <div class="wrapper w-full mb-5">
-        <div class="slider flex w-full space-x-5 pl-5">
-          <img src="assets/image-slide-1.jpg" alt="" class="slider-img rounded-lg max-w-md" />
-          <img src="assets/image-slide-2.jpg" alt="" class="slider-img rounded-lg max-w-md" />
-          <img src="assets/image-slide-3.jpg" alt="" class="slider-img rounded-lg max-w-md" />
-          <img src="assets/image-slide-4.jpg" alt="" class="slider-img rounded-lg max-w-md" />
-          <img src="assets/image-slide-5.jpg" alt="" class="slider-img rounded-lg max-w-md" />
-        </div>
+      <div id="carousel" class="w-full mb-5">
+        <ul id="imgs" class="flex w-full space-x-5 pl-2">
+          <li class="img">
+            <img src="assets/image-slide-1.jpg" alt="Slider Image #1" class="rounded-lg max-w-md" />
+          </li>
+          <li class="img">
+            <img src="assets/image-slide-2.jpg" alt="Slider Image #2" class="rounded-lg max-w-md" />
+          </li>
+          <li class="img">
+            <img src="assets/image-slide-3.jpg" alt="Slider Image #3" class="rounded-lg max-w-md" />
+          </li>
+          <li class="img">
+            <img src="assets/image-slide-4.jpg" alt="Slider Image #4" class="rounded-lg max-w-md" />
+          </li>
+          <li class="img">
+            <img src="assets/image-slide-5.jpg" alt="Slider Image #5" class="rounded-lg max-w-md" />
+          </li>
+        </ul>
       </div>
       <!-- Buttons -->
       <div class="flex items-center justify-center space-x-5 mx-auto w-full">
-        <button id="left-btn" class="flex items-center justify-center bg-dark h-[60px] w-[60px] rounded-full">
+        <button id="left" class="carousel-btn flex items-center justify-center bg-dark h-[60px] w-[60px] rounded-full hover:bg-purple">
           <img src="assets/icon-arrow-left.svg" alt="" />
         </button>
-        <button id="right-btn" class="flex items-center justify-center bg-dark h-[60px] w-[60px] rounded-full">
+        <button id="right" class="carousel-btn flex items-center justify-center bg-dark h-[60px] w-[60px] rounded-full hover:bg-purple">
           <img src="assets/icon-arrow-right.svg" alt="" />
         </button>
       </div>
@@ -150,7 +160,6 @@
         </div>
       </div>
     </footer>
-
     <script src="js/app.js"></script>
   </body>
 </html>

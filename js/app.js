@@ -1,17 +1,37 @@
-const leftBtn = document.getElementById('left-btn');
-const rightBtn = document.getElementById('right-btn');
-const slider = document.querySelector('.slider');
-const sliderImages = document.querySelectorAll('.slider-img');
+const imgs = document.getElementById('imgs');
+const leftBtn = document.getElementById('left');
+const rightBtn = document.getElementById('right');
+const img = document.querySelectorAll('#imgs .img');
 
-leftBtn.addEventListener('click', moveLeft);
-rightBtn.addEventListener('click', moveRight);
+let index = 0;
 
-function moveLeft() {
-  sliderImages.forEach((img) => {
-    img.style.transform = `translateX(-100%)`;
-  });
+function run() {
+  index++;
+  changeImage();
+}
+// Change Image
+function changeImage() {
+  if (index > img.length - 1) {
+    index = 0;
+  } else if (index < 0) {
+    index = img.length - 1;
+  }
+
+  imgs.style.transform = `translateX(${-index * 460}px)`;
 }
 
-function moveRight() {
-  slider.style.transform = `translateX(100%)`;
+function resetInterval() {
+  clearInterval(interval);
 }
+
+// Right button functionality
+rightBtn.addEventListener('click', () => {
+  index++;
+  changeImage();
+});
+
+// Left button functionality
+leftBtn.addEventListener('click', () => {
+  index--;
+  changeImage();
+});
